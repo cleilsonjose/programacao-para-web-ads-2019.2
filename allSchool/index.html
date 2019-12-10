@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>AllSchool</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+        <link rel="shortcut icon" type="image/x-png" href="imagens/education.png">
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="topo">
+            <div class="icon">
+                <h1>AllSchool</h1> 
+            </div>
+            
+            <div class="clear"></div>
+        </div>
+        <div class="main">
+            <div class="box">
+                    <form action="">
+                      <p>
+                        <img src="imagens/user1.png"><input name="email" type="email" required="required" placeholder="exempo@meuexmplo.com">
+                      </p>
+                      <p>
+                        <img src="imagens/lock1.png"><input name="senha" type="password" required="required" placeholder=" ******">
+                      </p>
+                      <a href="">Esqueceu a senha?</a><br><br>
+                      <input type="submit" value="Logar" />   
+                    </form>
+            </div>
+            
+            <div class="box2">
+                <h4>Não possue conta?cadastra-se:</h4>
+                <input type="submit" onclick="cadastro()" value="Cadastra:">
+            </div>
+            <div class="modal " id="id01">
+                <form class="modal-content animacao">
+                    <div class="container">
+                        <div class="icon-cadastro">
+                            <h1>Criar uma nova conta</h1>
+                            <p>Preencha os dados abaixo</p>
+                        </div>
+                        <label for="uname"><b>Você é:</b></label>
+                        <select>
+                            <option>Aluno</option>
+                            <option>Professor</option>
+                            <option>Bibliotecário</option>
+                        </select>
+                        <label for="uname"><b>Nome</b></label>
+                        <input type="text" placeholder="Fulano de tal" required>
+
+                        <label for="uname"><b>CPF</b></label>
+                        <input type="text" placeholder="12345678900" required>
+
+                        <label for="uname"><b>RG</b></label>
+                        <input type="text" placeholder="1234567" required>
+
+                        <label for="uname"><b>Data de Nascimento</b></label>
+                        <input type="date" required>
+
+                        <label for="uname"><b>Anos/Semestre</b></label>
+                        <input type="text" placeholder="2019.2" required>
+
+                        <label for="uname"><b>E-mail</b></label>
+                        <input type="email" placeholder="Nome Obrigatorio" required>
+
+                        <label for="uname"><b>Senha</b></label>
+                        <input type="password" placeholder="*********" required>
+
+                        <label for="uname"><b>Confirmar Senha</b></label>
+                        <input type="password" placeholder="*********" required>
+
+                        <button class="cadastro"type="submit">Cadastrar</button>
+                        <button class="cancelar" type="button" onclick="document.getElementById('id01').style.display='none'" >Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div><!--final main-->
+        <div class="clear"></div>
+        
+        
+    </body>
+</html>
