@@ -1,0 +1,21 @@
+#lampada{
+    width: 300px;
+    height: 300px;
+}
+
+button{
+	width: 100px;
+	margin-left:30px;
+}
+
+#urso{
+	width: 50px;
+	position: relative;		
+}
+#tabela{
+	
+}
+.b-tabela{
+
+	margin:0;
+}
