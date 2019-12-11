@@ -8,31 +8,31 @@
         <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
-        <div class="topo">
-            <div class="icon">
-                <h1>AllSchool</h1> 
-            </div>
-            
-            <div class="clear"></div>
-        </div>
-        <div class="main">
-            <div class="box">
-                    <form action="">
+            <header class="sombra">
+                <h1>
+                    <a href="">AllSchool</a>
+                </h1>            
+            </header>
+        
+        <main class="sombra">
+            <div class="box sombra">
+                    <form action="" >
                       <p>
                         <img src="imagens/user1.png"><input name="email" type="email" required="required" placeholder="exempo@meuexmplo.com">
                       </p>
                       <p>
                         <img src="imagens/lock1.png"><input name="senha" type="password" required="required" placeholder=" ******">
                       </p>
-                      <a href="">Esqueceu a senha?</a><br><br>
+                      <a href="" class="forma">Esqueceu a senha?</a><br><br>
                       <input type="submit" value="Logar" />   
                     </form>
             </div>
             
-            <div class="box2">
+            <div class="box2 sombra">
                 <h4>Não possue conta?cadastra-se:</h4>
                 <input type="submit" onclick="cadastro()" value="Cadastra:">
             </div>
+            <div class="clear"></div>
             <div class="modal " id="id01">
                 <form class="modal-content animacao">
                     <div class="container">
@@ -70,15 +70,15 @@
                         <label for="uname"><b>Confirmar Senha</b></label>
                         <input type="password" placeholder="*********" required>
 
+                        <button class="cancelar" type="button" onclick="document.getElementById('id01').style.display='none'" >Cancel</button>   
                         <button class="cadastro"type="submit">Cadastrar</button>
-                        <button class="cancelar" type="button" onclick="document.getElementById('id01').style.display='none'" >Cancel</button>
+                        
                     </div>
                 </form>
             </div>
 
 
-        </div><!--final main-->
-        <div class="clear"></div>
+        </main><!--final main-->
         
         
     </body>
